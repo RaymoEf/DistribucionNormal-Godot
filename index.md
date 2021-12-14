@@ -2,10 +2,10 @@
 
 ![Captura de pantalla 2021-12-14 134958](https://user-images.githubusercontent.com/57385138/146069511-ff79e6a0-6775-4aa6-8bbb-42cdee32f413.png)
 
-- El botón _nuevo_ añade una nueva linea a la simulación
-- El botón _Limpiar_ limpia la pantalla eliminando las lineas dibujadas
+- El botón _nuevo_ añade una nueva línea a la simulación
+- El botón _Limpiar_ limpia la pantalla eliminando las líneas dibujadas
 - En _Cantidad de números_ se puede seleccionar la cantidad de números generados para la simulación
-- El eje X representa los numeros del 0 al 500
+- El eje X representa los números del 0 al 500
 - El eje Y representa la cantidad de veces que aparece un número
 
 Simulación corriendo: 
@@ -23,7 +23,7 @@ var clr = RandomNumberGenerator.new()
 var current_scene = null
 ```
 
-Precarga de una escena con la linea que se usara despues, se generan dos numeros aleatoreos, uno para el rango y otro para los colores
+Precarga de una escena con la línea que se usara después, se generan dos números aleatorios, uno para el rango y otro para los colores
 
 ```gdscript
 func spawnLine(num, media, desviacion):
@@ -67,8 +67,8 @@ func spawnLine(num, media, desviacion):
 		yield(get_tree().create_timer(0.01), "timeout")
 ```
 
-Función para invocar una nueva linea al simulador
+Función para invocar una nueva línea al simulador
 
-- Se obtiene un color al azar obteniendo 3 numeros aleatoreos entre 0 y 255
-- Si se corre en un entorno web _if OS.has_feature('JavaScript')_ ejecuta un scpript para generar los números aleatoreos con distribución normal, de lo contrario ejecuta _numeros.push_back(int(rng.randfn(media,desviacion)))_ para obtener los números
-- Finalmente dibuja un punto de la linea cada 0.01 ticks 
+- Se obtiene un color al azar obteniendo 3 números aleatorios entre 0 y 255
+- Si se corre en un entorno web _if OS.has_feature('JavaScript')_ ejecuta un script para generar los números aleatorios con distribución normal, de lo contrario ejecuta _numeros.push_back(int(rng.randfn(media,desviacion)))_ para obtener los números
+- Finalmente, dibuja un punto de la línea cada 0.01 ticks 
