@@ -1,0 +1,221 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -104.0
+margin_top = -184.0
+margin_right = 1200.0
+margin_bottom = 712.0
+color = Color( 0.521569, 0.521569, 0.521569, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_right = 88.0
+margin_bottom = 47.0
+text = "Nuevo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="n" type="Label" parent="."]
+margin_left = 924.857
+margin_top = 40.6904
+margin_right = 964.857
+margin_bottom = 54.6904
+text = "500"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d" type="Label" parent="."]
+visible = false
+margin_left = 660.784
+margin_top = 46.6529
+margin_right = 700.784
+margin_bottom = 60.6529
+text = "30"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="m" type="Label" parent="."]
+visible = false
+margin_left = 508.821
+margin_top = 42.8775
+margin_right = 548.821
+margin_bottom = 56.8775
+text = "250"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 872.0
+margin_top = 24.6446
+margin_right = 1008.0
+margin_bottom = 38.6446
+text = "Cantidad de números"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+visible = false
+margin_left = 454.367
+margin_top = 24.6446
+margin_right = 589.367
+margin_bottom = 38.6446
+text = "Media"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+visible = false
+margin_left = 608.219
+margin_top = 26.5323
+margin_right = 743.218
+margin_bottom = 40.5323
+text = "Desviacion estandar"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 955.291
+margin_top = 61.3453
+margin_right = 986.291
+margin_bottom = 81.3453
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 895.557
+margin_top = 61.3453
+margin_right = 926.557
+margin_bottom = 81.3453
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+visible = false
+margin_left = 535.025
+margin_top = 60.7007
+margin_right = 566.025
+margin_bottom = 80.7007
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+visible = false
+margin_left = 475.291
+margin_top = 60.7007
+margin_right = 506.291
+margin_bottom = 80.7007
+rect_rotation = 1.41272
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="."]
+visible = false
+margin_left = 687.025
+margin_top = 64.7007
+margin_right = 718.025
+margin_bottom = 84.7007
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button7" type="Button" parent="."]
+visible = false
+margin_left = 627.291
+margin_top = 64.7007
+margin_right = 658.291
+margin_bottom = 84.7007
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button8" type="Button" parent="."]
+margin_left = 96.0
+margin_right = 184.0
+margin_bottom = 47.0
+text = "Limpiar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 560.0
+margin_right = 20.0
+margin_bottom = 574.0
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 90.0
+margin_right = 28.0
+margin_bottom = 100.0
+text = "23"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 1000.0
+margin_top = 560.0
+margin_right = 20.0
+margin_bottom = 574.0
+text = "500"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 512.0
+margin_top = 560.0
+margin_right = 20.0
+margin_bottom = 574.0
+text = "250"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_Button7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_Button8_pressed"]
